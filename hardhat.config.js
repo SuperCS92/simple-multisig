@@ -17,6 +17,8 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const ACC1_PRIVATE_KEY = process.env.ACC1_PRIVATE_KEY;
 
 const MUMBAI_RPC_URL = process.env.MUMBAI_RPC_URL;
+const MUMBAI_API_KEY= process.env.MUMBAI_API_KEY;
+const KOVAN_API_KEY=process.env.KOVAN_API_KEY;
 
 
 
@@ -47,8 +49,8 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    //apiKey: "NS29C9SIXKZ2E2HTP2GD9C8WPNT8RN231I" //kovan api key
-    apiKey: "WJ4U4JXHW5CF6WQF212MDJB5XJX9N6TTQM"  //polygon-mumbai api key
+    //apiKey: KOVAN_API_KEY //kovan api key
+    apiKey: MUMBAI_API_KEY  //polygon-mumbai api key
   }
 };
 
